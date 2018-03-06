@@ -1,0 +1,8 @@
+language: csharp
+solution: WordCounter.sln
+mono: none
+dotnet: 2.0.0
+dist: trusty
+script:
+  - dotnet restore
+  - dotnet test ./Tests/WordCounter.Core.Tests/WordCounter.Core.Tests.csproj
